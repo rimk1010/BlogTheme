@@ -11,82 +11,82 @@
     </head>
     <body>
         <div class="wrapper">
-            <header>
+            <header id="header">
                 <nav class="nav">
-                    <h1 class="nav-title">FIREBLOG</h1>
-                    <ul class="nav-navigation">
-                        <li >
+                    <h1 class="nav-title"><a href="#">BLOGTITLE</a></h1>
+                    <ul class="nav-items">
+                        <li class="nav-items-item">
                             <a href="#">NAV1</a>
                         </li>
-                        <li>
+                        <li class="nav-items-item">
                             <a href="#">NAV2</a>
                         </li>
-                        <li>
+                        <li class="nav-items-item">
                             <a href="#">NAV3</a>
                         </li>
                     </ul>
                 </nav>
             </header>
-            <main>
+            <main id="main">
                 <div class="hero">
-                    <div class="hero-img"><img src="./img/hero-img.jpg" width="1280px" height="500px"/></div>
+                    <div class="hero-img"><img src="./img/hero-img.jpg" height="350px"/></div>
                     <div class="hero-text">
                         <h2 class="hero-text-main">Hero Title</h2>
-                        <p class="hero-text-sub">このブログはサイドFIREを目指すための知識が詰まったブログです。楽しんでいってください。</p>
-                        <button>このサイトについて</button>
+                        <p class="hero-text-sub">ブログについて書いています。ここにはブログの説明など簡単な説明が入ります。何か伝えたいことがあればここに書くとよいのではないでしょうか</p>
+                        <button class="hero-text-button"><a href="#">詳細はこちら</a></button>
                     </div>
                 </div>
                 <div class="main-wrapper">
                     <div class="main">
                         <ul class="tabs">
-                            <li>新着記事</li>
-                            <li>おすすめ記事</li>
+                            <li class="tab-item">新着記事</li>
+                            <li class="tab-item">おすすめ記事</li>
                         </ul>
                         <ul class="main-contents">
                             <li class="content">
-                                <img src="./img/sample1.jpg" width="250px" height="250px">
+                                <img src="./img/sample1.jpg" width="200px" height="200px">
                                 <p>2020/08/08</p>
                                 <p>Sample投稿1-これはサンプル投稿です。</p>
                                 <span>Category</span>
                             </li>
                             <li class="content">
-                                <img src="./img/sample2.jpg" width="250px" height="250px">
+                                <img src="./img/sample2.jpg" width="200px" height="200px">
                                 <p>2020/08/08</p>
                                 <p>Sample投稿2-これはサンプル投稿です。</p>
                                 <span>Category</span>
                             </li>
                             <li class="content">
-                                <img src="./img/sample3.jpg" width="250px" height="250px">
+                                <img src="./img/sample3.jpg" width="200px" height="200px">
                                 <p>2020/08/08</p>
                                 <p>Sample投稿3-これはサンプル投稿です。</p>
                                 <span>Category</span>
                             </li>
                             <li class="content">
-                                <img src="./img/sample4.jpg" width="250px" height="250px">
+                                <img src="./img/sample4.jpg" width="200px" height="200px">
                                 <p>2020/08/08</p>
                                 <p>Sample投稿4-これはサンプル投稿です。</p>
                                 <span>Category</span>
                             </li>
                             <li class="content">
-                                <img src="./img/sample5.jpg" width="250px" height="250px">
+                                <img src="./img/sample5.jpg" width="200px" height="200px">
                                 <p>2020/08/08</p>
                                 <p>Sample投稿5-これはサンプル投稿です。</p>
                                 <span>Category</span>
                             </li>
                             <li class="content">
-                                <img src="./img/sample6.jpg" width="250px" height="250px">
+                                <img src="./img/sample6.jpg" width="200px" height="200px">
                                 <p>2020/08/08</p>
                                 <p>Sample投稿6-これはサンプル投稿です。</p>
                                 <span>Category</span>
                             </li>
                             <li class="content">
-                                <img src="./img/sample7.jpg" width="250px" height="250px">
+                                <img src="./img/sample7.jpg" width="200px" height="200px">
                                 <p>2020/08/08</p>
                                 <p>Sample投稿7-これはサンプル投稿です。</p>
                                 <span>Category</span>
                             </li>
                             <li class="content">
-                                <img src="./img/sample8.jpg" width="250px" height="250px">
+                                <img src="./img/sample8.jpg" width="200px" height="200px">
                                 <p>2020/08/08</p>
                                 <p>Sample投稿8-これはサンプル投稿です。</p>
                                 <span>Category</span>
@@ -94,50 +94,58 @@
                         </ul>
                     </div>
                     <div class="side">
-                        <div class="introduction">
-                            <img src="./img/hero-img.jpg" width="300px" height="300px">
-                            <img src="./img/sample1.jpg" width="100px" height="100px">
-                            <span>FIRE-TECH</span>
-                            <p>私の名前はFIRE-TECHです。サイドFIREを目指す会社員です。よろしくお願いします。</p>
-                            <ul class="introduction-sns">
-                                <li>Twitter</li>
-                                <li>Facebook</li>
-                                <li>Instagram</li>
-                                <li>Quiita</li>
+                        <div class="introduction side-container">
+                            <img class="introduction-img" src="./img/hero-img.jpg" height="150px">
+                            <div class="introduction-contents">
+                                <img class="introduction-thumbnail" src="./img/sample1.jpg" width="100px" height="100px">
+                                <span class="introduction-name">FIRE-TECH</span>
+                                <p class="introduction-text">私の名前はFIRE-TECHです。サイドFIREを目指す会社員です。よろしくお願いします。</p>
+                                <ul class="introduction-sns">
+                                    <li class="sns-item">TW</li>
+                                    <li class="sns-item">FB</li>
+                                    <li class="sns-item">IG</li>
+                                    <li class="sns-item">QT</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu side-container">
+                            <div class="side-container-title">
+                                <h2>MENU!</h2>
+                            </div>
+                            <ul class="menu-contents">
+                                <li class="menu-item">このブログについて</li>
+                                <li class="menu-item">○○について</li>
+                                <li class="menu-item">お問い合わせ</li>
+                                <li class="menu-item">おすすめ記事</li>
                             </ul>
                         </div>
-                        <div class="menu">
-                            <h2>MENU!</h2>
-                            <ul>
-                                <li>このブログについて</li>
-                                <li>○○について</li>
-                                <li>お問い合わせ</li>
-                                <li>おすすめ記事</li>
-                            </ul>
-                        </div>
-                        <div class="popular">
-                            <h2>POPULAR-POSTS</h2>
+                        <div class="popular side-container">
+                            <div class="side-container-title">
+                                <h2>POPULAR-POSTS</h2>
+                            </div>
                             <ul class="popular-posts">
                                 <li class="post">
-                                    <img src="./img/sample1.jpg" width="200px" height="200px">
+                                    <img src="./img/sample1.jpg" width="100px" height="100px">
                                     <p>人気投稿１。これは人気投稿欄です。</p>
                                 </li>
                                 <li class="post">
-                                    <img src="./img/sample2.jpg" width="200px" height="200px">
+                                    <img src="./img/sample2.jpg" width="100px" height="100px">
                                     <p>人気投稿2。これは人気投稿欄です。</p>
                                 </li>
                                 <li class="post">
-                                    <img src="./img/sample3.jpg" width="200px" height="200px">
+                                    <img src="./img/sample3.jpg" width="100px" height="100px">
                                     <p>人気投稿3。これは人気投稿欄です。</p>
                                 </li>
                                 <li class="post">
-                                    <img src="./img/sample4.jpg" width="200px" height="200px">
+                                    <img src="./img/sample4.jpg" width="100px" height="100px">
                                     <p>人気投稿4。これは人気投稿欄です。</p>
                                 </li>
                             </ul>
                         </div>
-                        <div class="sns">
-                            <h2>Follow ME!</h2>
+                        <div class="sns side-container">
+                            <div class="side-container-title">
+                                <h2>FOLLOW ME!</h2>
+                            </div>
                             <ul class="sns-contents">
                                 <li class="sns-sns">
                                     Twitter
@@ -153,8 +161,10 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="archive">
-                            <h2>ARCHIVES</h2>
+                        <div class="archive side-container">
+                            <div class="side-container-title">
+                                <h2>ARCHIVE</h2>
+                            </div>
                             <select>
                                 <option>1月</option>
                                 <option>2月</option>
@@ -163,8 +173,10 @@
                                 <option>5月</option>
                             </select>
                         </div>
-                        <div class="category">
-                            <h2>CATEGORY</h2>
+                        <div class="category side-container">
+                            <div class="side-container-title">
+                                <h2>CATEGORY</h2>
+                            </div>
                             <ul class="category-contents">
                                 <li class="category-content">
                                     カテゴリー１
