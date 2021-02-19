@@ -1,3 +1,6 @@
+body {
+  background-color: ghostwhite;
+}
 #header {
   background-color: #f03030;
   box-sizing: border-box;
@@ -5,6 +8,8 @@
 
 .nav {
   overflow: hidden;
+  width: 1180px;
+  margin: 0 auto;
 }
 .nav-title {
   display: inline-block;
@@ -40,18 +45,20 @@
 }
 
 .hero {
-  position: relative;
+  margin: 50px auto;
+  display: flex;
+  width: 1180px;
+}
+.hero-img {
+  width: 50%;
 }
 .hero-img img {
-  width: 100%;
+  width: 1180px;
 }
 .hero-text {
   width: 50%;
-  position: absolute;
-  top: 0;
-  right: 0;
   color: white;
-  margin: 20px 20px 0 0;
+  padding: 100px 20px;
 }
 .hero-text-sub {
   line-height: 2;
@@ -70,6 +77,9 @@
   background-color: ghostwhite;
   display: flex;
   padding: 10px;
+  width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main {
   flex: 2;
@@ -122,6 +132,7 @@
 }
 .content-text-tag {
   background-color: #f03030;
+  color: white;
   font-size: 0.8rem;
   padding: 0.3rem;
   border-radius: 50%;
@@ -180,7 +191,38 @@
   list-style: none;
   text-align: center;
   display: table-cell;
-  padding: 10px;
+  color: #fff;
+}
+.sns-item i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sns-sns i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fa {
+  position: relative;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.twitter {
+  background: linear-gradient(135deg, #13f1fc 0%, #0470dc 100%);
+}
+.facebook {
+  background: linear-gradient(135deg, #6699ff 0%, #3b5998 100%);
+}
+.instagram {
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+}
+.github {
+  background: linear-gradient(135deg, #b1ea4d 0%, #459522 100%);
 }
 .menu-contents {
   display: flex;
@@ -193,9 +235,10 @@
   width: 50%;
   list-style-type: none;
   text-align: center;
-  padding: 5px;
+  padding: 1rem 2rem;
   box-sizing: border-box;
   border: 1px solid black;
+  font-size: 0.8rem;
 }
 .popular {
 }
@@ -234,9 +277,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 20px;
 }
 .sns-sns {
   list-style-type: none;
+  color: #fff;
 }
 .archive-month {
   width: 100%;
@@ -255,12 +300,16 @@
   background-color: #f03030;
   color: white;
 }
-.main-footer {
+.footers {
   background-color: #f2f2f2;
+}
+.main-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 80px 40px;
+  width: 1180px;
+  margin: 0 auto;
 }
 .main-footer-search-container {
   margin-bottom: 80px;
@@ -273,7 +322,7 @@
   height: 34px;
 }
 .main-footer-content {
-  width: 45%;
+  width: 30%;
 }
 .main-footer-title {
   padding: 5px 1rem;
